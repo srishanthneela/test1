@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Study Website Design Tutorial</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-user-graduate"></i>LOGO</a>
+
+        <nav class="navbars">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#course">course</a></li>
+                <li><a href="#teacher">teacher</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="dropdown-item">
+            <div class="clock">
+                <div class="display">
+                </div>
+            </div>
+            <div style="margin-right: 20px;" class="notification" id="login"><i class="fa fa-bell"></i></div>
+            <div id="login" onclick="myFunction()" class="fas fa-user-circle"></div>
+            <div class="dropdown-content">
+                <ul class="links">
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a></li>
+                    <div class="divider"></div>
+                    <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a></li>
+                    <li><a href="#"><i class="fa fa-question" aria-hidden="true"></i> Help</a></li>
+                    <div class="divider"></div>
+                    <li><a href="https://srishanthneela.github.io/student-management.com/home.html"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+        
+        </div>
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="class-schedule">
+        <h1>Schedule class  </h1><br>
+        topic:- <input style="width: 30%;" type="text"><br><br>
+        start:- <input type="date"><input type="time"><br><br>
+        duration:- <input type="datetime-local"><br><br>
+        class:- <input type="text"><br><br>
+        subject:- <input type="text"><br><br>
+
+        <h2>Security</h2><br>
+
+        Meeting id:- <input type="number" value="1235671358">
+        password:- <input type="text" value="abcd1234"><br><br>
+
+        <h2>video</h2><br>
+
+        host:- On<input type="radio"> Off<input type="radio"><br><br>
+
+        <h2>Meeting options</h2><br>
+
+        <input type="checkbox">Allow participants to join anytime <br><br>
+        <input type="checkbox">Mute participants upon entry <br><br>
+        <input type="checkbox">Automatically record meeting on the local computer <br><br>
+        <input type="checkbox">Approve or block entry for users from specific countries/regions <br>
+        
+        <br><br>
+        <a href="https://srishanthneela.github.io/student-management.com/teacher/user.html" class="btn">save</a>
+        <a href="https://srishanthneela.github.io/student-management.com/teacher/user.html" class="btn">close</a>
+        
+    </div>
+
+
+
+    <!-- home section starts  -->
+
+    
+    <!-- footer section starts  -->
+
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">france</a>
+                <a href="#">russia</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">course</a>
+                <a href="#">teachers</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-map-marker-alt"></i> Hydrabad, india 400104. </p>
+                <p> <i class="fas fa-envelope"></i> srishanthneela1@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> 91+ 9346313871 </p>
+            </div>
+
+        </div>
+
+        <h1 class="credit">created by <a href="#">Mr. Srishanth Neela</a> all rights reserved. </h1>
+
+    </div>
+
+    <!-- footer section ends -->
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../index.js"></script>
+
+</body>
+
+</html>
+
+    <script>
+        function myFunction() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('dropdown-toggle');
+        }
+    </script>

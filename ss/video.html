@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="start" class="btn"type="button" style="transform: translate(300%,800%);">Press Start To Continue</button>
+    <div id="video-container">
+    </div>
+    
+    <script>
+        var button = document.querySelector('#start');
+        var container = document.querySelector('#video-container');
+        var api = null;
+
+        button.addEventListener('click', () => {
+            var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var stringLength = 30;
+
+            function pickRandom() {
+                return possible[Math.floor(Math.random() * possible.length)];
+            }
+
+            var randomString = Array.apply(null, Array(stringLength)).map(pickRandom).join('');
+
+            var domain = "meet.jit.si";
+            var options = {
+                "roomName": randomString,
+                "parentNode": container,
+                "width": "100%",
+                "height": 930,
+            };
+            api = new JitsiMeetExternalAPI(domain, options);
+        });
+    </script>
+    <script>
+        document.getElementById("start").addEventListener("click",function()
+        {
+            var start = document.getElementById("start");
+            if(start.style.display == "none")
+            {
+                start.style.display = "block";
+            }
+            else{
+                start.style.display = "none"
+            }
+        })
+    </script>
+</body>
+</html>

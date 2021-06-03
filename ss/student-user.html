@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Study Website Design Tutorial</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-user-graduate"></i>LOGO</a>
+
+        <nav class="navbars">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#course">course</a></li>
+                <li><a href="#teacher">teacher</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="dropdown-item">
+            <div class="clock">
+                <div class="display">
+                </div>
+            </div>
+            <div style="margin-right: 20px;" class="notification" id="login"><i class="fa fa-bell"></i></div>
+            <div id="login" onclick="myFunction()" class="fas fa-user-circle"></div>
+            <div class="dropdown-content">
+                <ul class="links">
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a></li>
+                    <div class="divider"></div>
+                    <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a></li>
+                    <li><a href="#"><i class="fa fa-question" aria-hidden="true"></i> Help</a></li>
+                    <div class="divider"></div>
+                    <li><a href="#"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+        
+        </div>
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="student-user">
+                <div class="left sidebar-container">
+                    <ul>
+                        <li><img src="../images/user.png" alt=""></li>
+                        <li>Srishanth</li>
+                        <li>8th / B</li>
+                    </ul>
+                    <div class="calendar">
+                        <div class="month">
+                            <i class="fas fa-angle-left prev"></i>
+                            <div class="date">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                            <i class="fas fa-angle-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="days"></div>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>class</th>
+                            <th>time</th>
+                            <th>day</th>
+                        </tr>
+                        <tr>
+                            <td>math</td>
+                            <td>2pm</td>
+                            <td>02/06/21</td>
+                        </tr>
+                        <tr>
+                            <td>math</td>
+                            <td>2pm</td>
+                            <td>02/06/21</td>
+                        </tr>
+                        <tr>
+                            <td>math</td>
+                            <td>2pm</td>
+                            <td>02/06/21</td>
+                        </tr>
+                        <tr>
+                            <td>math</td>
+                            <td>2pm</td>
+                            <td>02/06/21</td>
+                        </tr>
+                        <tr>
+                            <td>math</td>
+                            <td>2pm</td>
+                            <td>02/06/21</td>
+                        </tr>
+                        <tr>
+                            <td>math</td>
+                            <td>2pm</td>
+                            <td>02/06/21</td>
+                        </tr>
+
+                    </table>
+                    <div class="status">
+                        <p style="color: green;"><span>status:-</span>stated</p>
+                    </div>
+                </div>
+                <div class="contaner">
+                </div>
+                <div class="right-container" style="position: absolute;right: 0;">
+                    <div class="links-right">
+                        <a href="">text book</a>
+                        <a href="">board</a>
+                        <a href="">notes</a>
+                        <a href="">assessment</a>
+                        <a href="">exam</a>
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+                </div>
+
+    </div>
+
+
+
+    <!-- home section starts  -->
+
+
+    <!-- footer section starts  -->
+
+    <div class="footer">
+
+        <h1 class="credit">created by <a href="#">Mr. Srishanth Neela</a> all rights reserved. </h1>
+
+    </div>
+
+    <!-- footer section ends -->
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../index.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        var dropdownContent = document.querySelector('.dropdown-content');
+        dropdownContent.classList.toggle('dropdown-toggle');
+    }
+</script>   
